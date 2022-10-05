@@ -357,3 +357,12 @@ create table if not exists public.dashboard
     seq          smallint default 0,
     primary key (user_id, proj_id, dashboard_id)
 );
+
+create table if not exists public.eliona_secret
+(
+    schema text not null primary key,
+    secret text
+);
+
+insert into public.eliona_secret (schema, secret)
+values  ('api', 'secret');
