@@ -12,16 +12,12 @@ It is best to start these images with Docker compose. You can use this [docker-c
 
 
 ### Dockerization
-
-docker system prune -a   
-
+`docker compose up --build`
 
 #### Issues ?
 
 Cleanup the docker images and volumes
-
-docker system prune
-
+`docker system prune`
 
 
 ## Usage ##
