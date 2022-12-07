@@ -10,6 +10,20 @@ You need a database initialized with mock objects and an Eliona API server. The 
 
 It is best to start these images with Docker compose. You can use this [docker-compose.yml](docker-compose.yml) as template. 
 
+
+### Dockerization
+
+docker system prune -a   
+
+
+#### Issues ?
+
+Cleanup the docker images and volumes
+
+docker system prune
+
+
+
 ## Usage ##
 
 The mock can be used with the following settings if you run the mock on localhost:

@@ -30,10 +30,9 @@ services:
   database:
     container_name: database-mock
     image: debezium/postgres:12
-    environment:
-      POSTGRES_PASSWORD: secret
-      PGPORT: 5432
-      TZ: Europe/Zurich
+    
+    env_file:
+      - ./docker/env/dbs/postgres.env
     networks:
       eliona-mock-network:
     volumes:
